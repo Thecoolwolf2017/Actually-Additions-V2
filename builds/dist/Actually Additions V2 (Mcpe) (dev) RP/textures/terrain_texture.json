@@ -1,0 +1,54 @@
+{
+    "num_mip_levels": 4,
+    "padding": 8,
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "atomic_reconstructor": {
+            "textures": "textures/blocks/atomic_reconstructor"
+        },
+        "emeradic": {
+            "textures": "textures/blocks/emeradic"
+        },
+        "enori": {
+            "textures": "textures/blocks/enori"
+        },
+        "void": {
+            "textures": "textures/blocks/void"
+        },
+        "palis": {
+            "textures": "textures/blocks/palis"
+        },
+        "diamatine": {
+            "textures": "textures/blocks/diamatine"
+        },
+        "restonia": {
+            "textures": "textures/blocks/restonia"
+        },
+         "cluster_red": {
+            "textures": "textures/blocks/block_cluster_red"
+        },
+        "cluster_blue": {
+            "textures": "textures/blocks/block_cluster_blue"
+        },
+        "cluster_black": {
+            "textures": "textures/blocks/block_cluster_black"
+        },
+        "cluster_white": {
+            "textures": "textures/blocks/block_cluster_white"
+        },
+        "cluster_green": {
+            "textures": "textures/blocks/block_cluster_green"
+        },
+        "cluster_light_blue": {
+            "textures": "textures/blocks/block_cluster_light_blue"
+        },
+        "iron_casing": {
+            "textures": "textures/blocks/iron_casing_block"
+        },
+        "black_quartz": {
+            "textures": "textures/blocks/black_quartz"
+        }
+    },
+    "texture_name": "atlas.terrain"
+}
+// BASE CRIADA POR ANDRIEL GAMES

@@ -1,0 +1,55 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "aa:void_block"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "void",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:geometry": "geometry.block.void",
+			"minecraft:display_name": "Void Crystal Block",
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "aa:rotacao"
+			},
+			"minecraft:destroy_time": 1,
+			"minecraft:friction": 0.6,
+			"minecraft:explosion_resistance": 1200,
+			"minecraft:block_light_absorption": 15,
+			"minecraft:loot": "loot_tables/maquinas/void.json",
+			"minecraft:map_color": "#22ffa4",
+			"minecraft:flammable": {
+				"flame_odds": 0,
+				"burn_odds": 0
+			}
+		}
+	}
+}

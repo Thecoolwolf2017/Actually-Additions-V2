@@ -1,0 +1,140 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "aa:atomic_reconstructor",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "atomic_reconstructor",
+					"render_method": "opaque"
+				},
+				"top": {
+					"texture": "atomic_reconstructor",
+					"render_method": "opaque"
+				},
+				"front": {
+					"texture": "atomic_reconstructor",
+					"render_method": "opaque"
+				},
+				"up": "top",
+				"south": "front"
+			},
+			"minecraft:geometry": "geometry.block.atomic",
+			"minecraft:display_name": "Atomic Reconstructor",
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "aa:rotacao"
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:friction": 0.6,
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 20
+			},
+			"minecraft:light_dampening": 15,
+			"minecraft:loot": "loot_tables/maquinas/atomic_reconstructor.json",
+			"minecraft:map_color": "#ccf8ff",
+			"minecraft:on_interact": {
+				"condition": "query.is_item_name_any=='coal_block'",
+				"event": "mudar",
+				"target": "self"
+			},
+			"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "aa:atomic",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"aa:atomic": {
+				"run_command": {
+					"command": [
+						"Fill ~1~~-2 ~-1~~1 aa:restonia_block 0 replace redstone_block 0",
+						"Fill ~1~~-2 ~-1~~1 aa:emeradic_block 0 replace emerald_block 0",
+						"Fill ~1~~-2 ~-1~~1 aa:enori_block 0 replace iron_block 0",
+						"Fill ~1~~-2 ~-1~~1 aa:diamatine_block 0 replace diamond_block 0",
+						"Fill ~1~~-2 ~-1~~1 aa:palis_block 0 replace lapis_block 0",
+						"Fill ~1~~-2 ~-1~~1 aa:void_block 0 replace coal_block 0"
+					]
+				}
+			},
+			"aa:rotacao": {
+				"set_block_property": {
+					"aa:posicao": "(query.cardinal_player_facing)"
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state ('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state ('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state ('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state ('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			}
+		]
+	}
+}

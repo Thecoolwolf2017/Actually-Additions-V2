@@ -1,0 +1,59 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "recipe:emeradic_aiot"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABC",
+			"DE ",
+			"   "
+		],
+		"key": {
+			"A": {
+				"item": "aa:emeradic_pickaxe",
+				"data": 0
+			},
+			"B": {
+				"item": "aa:emeradic_axe",
+				"data": 0
+			},
+			"C": {
+				"item": "aa:emeradic_hoe",
+				"data": 0
+			},
+			"D": {
+				"item": "aa:emeradic_sword",
+				"data": 0
+			},
+			"E": {
+				"item": "aa:emeradic_shovel",
+				"data": 0
+			},
+			"F": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"G": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"H": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"I": {
+				"item": "minecraft:stone",
+				"data": 0
+			}
+		},
+		"result": {
+			"item": "aa:emeradic_aiot",
+			"count": 1,
+			"data": 0
+		}
+	}
+}

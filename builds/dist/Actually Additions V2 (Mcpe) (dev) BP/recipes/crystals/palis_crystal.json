@@ -1,0 +1,59 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "recipe:palis_crystal"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"   ",
+			" E ",
+			"   "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:stone",
+				"data": 0
+			},
+			"B": {
+				"item": "minecraft:stone",
+				"data": 0
+			},
+			"C": {
+				"item": "minecraft:stone",
+				"data": 0
+			},
+			"D": {
+				"item": "minecraft:stone",
+				"data": 0
+			},
+			"E": {
+				"item": "aa:palis_block",
+				"data": 0
+			},
+			"F": {
+				"item": "minecraft:stone",
+				"data": 0
+			},
+			"G": {
+				"item": "minecraft:stone",
+				"data": 0
+			},
+			"H": {
+				"item": "minecraft:stone",
+				"data": 0
+			},
+			"I": {
+				"item": "minecraft:stone",
+				"data": 0
+			}
+		},
+		"result": {
+			"item": "aa:palis_crystal",
+			"count": 9,
+			"data": 0
+		}
+	}
+}

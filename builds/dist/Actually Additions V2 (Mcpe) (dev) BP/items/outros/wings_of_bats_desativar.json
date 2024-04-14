@@ -1,0 +1,39 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "aa:wings_of_bats_desativar",
+			"category": "command"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "wings_of_bat2"
+			},
+			"minecraft:creative_category": {
+				"parent": "items"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "aa:fly",
+					"target": "self"
+				}
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:fuel": {
+				"duration": 10
+			},
+			"minecraft:display_name": {
+				"value": "Wings Of The Bats Desativador"
+			}
+		},
+		"events": {
+			"aa:fly": {
+				"run_command": {
+					"command": [
+						"function wings_bats2"
+					]
+				}
+			}
+		}
+	}
+}

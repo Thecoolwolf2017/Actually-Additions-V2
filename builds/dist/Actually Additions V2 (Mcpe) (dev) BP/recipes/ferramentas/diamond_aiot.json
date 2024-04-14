@@ -1,0 +1,59 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "recipe:diamond_aiot"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABC",
+			"DE ",
+			"   "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:diamond_pickaxe",
+				"data": 0
+			},
+			"B": {
+				"item": "minecraft:diamond_axe",
+				"data": 0
+			},
+			"C": {
+				"item": "minecraft:diamond_hoe",
+				"data": 0
+			},
+			"D": {
+				"item": "minecraft:diamond_sword",
+				"data": 0
+			},
+			"E": {
+				"item": "minecraft:diamond_shovel",
+				"data": 0
+			},
+			"F": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"G": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"H": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"I": {
+				"item": "minecraft:stone",
+				"data": 0
+			}
+		},
+		"result": {
+			"item": "aa:diamond_aiot",
+			"count": 1,
+			"data": 0
+		}
+	}
+}
