@@ -1,0 +1,40 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "Actually Additions Mcpe feito por §3Gexis §3Gamer",
+		"name": "Actually Additions V2 (Mcpe)",
+		"uuid": "0a94be66-b2dd-47b8-9ccb-e0cd8557a40c",
+		"version": [
+			0,
+			0,
+			1
+		],
+		"min_engine_version": [
+			1,
+			14,
+			0
+		]
+	},
+	"modules": [
+		{
+			"description": "Actually Additions Mcpe feito por §3Gexis §3Gamer",
+			"type": "resources",
+			"uuid": "1d2c5918-c584-465b-ba98-71f41203fc0e",
+			"version": [
+				0,
+				0,
+				1
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"2.7.16"
+			],
+			"dash": [
+				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
+			]
+		}
+	}
+}

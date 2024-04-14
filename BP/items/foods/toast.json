@@ -1,0 +1,41 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "aa:toast",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.comida"
+      },
+      "minecraft:icon": {
+        "texture": "toast"
+      },
+      "minecraft:display_name": {
+        "value": "Toast\n§o§9Actually Additions"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:hand_equipped": false,
+      "minecraft:use_duration": 3, //Segundos pra comer
+      "minecraft:use_animation": "eat",
+      "minecraft:food": {
+        "nutrition": 3, //Quanto vai encher de fome
+        "saturation_modifier": "low", //Tempo que vai demorar pra ter fome novamente ("poor", "low", "normal", "high", "good", "max" e "supernatural")
+        "can_always_eat": false, //pode comer estando com a fome cheia? igual a maça dourada
+        "on_consume": {
+          "event": "comer"
+        }
+      }
+    },
+    "events": {
+      "comer": {
+        "run_command": {
+          "command": [
+          "comandos"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "aa:black_quartz_feature"
+		},
+		"count": 5,
+		"replace_rules": [
+			{
+				"places_block": "aa:black_quartzore",
+				"may_replace": [
+					{
+						"name": "minecraft:stone"
+					}
+				]
+			}
+		]
+	}
+}

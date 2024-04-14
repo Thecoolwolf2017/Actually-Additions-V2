@@ -1,0 +1,59 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "recipe:pizza"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"BAB",
+			"CDE",
+			" F "
+		],
+		"key": {
+			"A": {
+				"item": "aa:knife",
+				"data": 0
+			},
+			"B": {
+				"item": "aa:cheese",
+				"data": 0
+			},
+			"C": {
+				"item": "minecraft:brown_mushroom",
+				"data": 0
+			},
+			"D": {
+				"item": "minecraft:carrot",
+				"data": 0
+			},
+			"E": {
+				"item": "minecraft:cooked_salmon",
+				"data": 0
+			},
+			"F": {
+				"item": "aa:dough",
+				"data": 0
+			},
+			"G": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"H": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"I": {
+				"item": "minecraft:stone",
+				"data": 0
+			}
+		},
+		"result": {
+			"item": "aa:pizza",
+			"count": 1,
+			"data": 0
+		}
+	}
+}

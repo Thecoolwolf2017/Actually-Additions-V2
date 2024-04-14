@@ -1,0 +1,104 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "aa:block_cluster_green",
+			"properties": {
+				"aa:posicao": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6
+				]
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cluster_green",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:geometry": "geometry.cluster_green",
+			"minecraft:display_name": "Green Crystal Cluster",
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:block_light_emission": 0.5,
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "aa:rotacao"
+			},
+			"minecraft:destroy_time": 2,
+			"minecraft:friction": 0.6,
+			"minecraft:block_light_absorption": 1,
+			"minecraft:loot": "loot_tables/maquinas/cluster_green.json",
+			"minecraft:map_color": "#717171",
+			"minecraft:flammable": {
+				"flame_odds": 0,
+				"burn_odds": 0
+			}
+		},
+		"events": {
+			"aa:rotacao": {
+				"set_block_property": {
+					"aa:posicao": "(query.cardinal_player_facing)"
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('aa:posicao') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('aa:posicao') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('aa:posicao') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			}
+		]
+	}
+}

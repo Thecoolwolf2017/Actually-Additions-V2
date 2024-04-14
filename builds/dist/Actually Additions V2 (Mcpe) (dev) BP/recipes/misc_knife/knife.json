@@ -1,0 +1,59 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "recipe:knife"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"   ",
+			" B ",
+			" A "
+		],
+		"key": {
+			"A": {
+				"item": "aa:knife_handle",
+				"data": 0
+			},
+			"B": {
+				"item": "aa:knife_blade",
+				"data": 0
+			},
+			"C": {
+				"item": "aa:diamatine_crystal",
+				"data": 0
+			},
+			"D": {
+				"item": "aa:diamatine_crystal",
+				"data": 0
+			},
+			"E": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"F": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"G": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"H": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"I": {
+				"item": "minecraft:stone",
+				"data": 0
+			}
+		},
+		"result": {
+			"item": "aa:knife",
+			"count": 1,
+			"data": 0
+		}
+	}
+}

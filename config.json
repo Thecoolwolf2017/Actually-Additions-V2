@@ -1,0 +1,45 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Actually Additions V2 (Mcpe) (dev)",
+	"namespace": "aa",
+	"authors": [
+		"Lozenda"
+	],
+	"targetVersion": "1.20.40",
+	"description": "Actually Additions Mcpe",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": true,
+		"creationOfCustomBiomes": true,
+		"upcomingCreatorFeatures": true,
+		"enableGameTestFramework": true,
+		"experimentalMolangFeatures": true,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Actually Additions V2 (Mcpe) (dev)"
+				}
+			]
+		]
+	}
+}

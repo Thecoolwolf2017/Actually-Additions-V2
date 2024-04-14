@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.leaf.wield_first_person": {
+      "loop": true,
+      "bones": {
+        "rightitem": {
+          "position": [ 190.0, -150.0, 150.0 ],
+          "rotation": [ -100.0, 120.0, 140.0 ],
+          "scale": [ 25.0, 25.0, 25.0 ]
+        }
+      }
+    },
+    "animation.leaf.wield_third_person": {
+      "loop": true,
+      "bones": {
+        "rightitem": {
+          "position": [ 0.0, 0.0, 0.0 ],
+          "rotation": [ 0.0, 0.0, 0.0 ],
+          "scale": [ 1.0, 1.0, 1.0 ]
+        }
+      }
+    }
+  }
+}

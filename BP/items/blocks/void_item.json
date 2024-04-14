@@ -1,0 +1,38 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "aa:void_item",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.items"
+      },
+	  "minecraft:allow_off_hand": true,
+      "minecraft:max_stack_size": 64,
+      "minecraft:block_placer": {
+        "block": "aa:void_block",
+        "use_block_description": true
+      },
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "third_person": {
+            "position": [0.26, 1.0, -0.55],
+            "scale": [0.024, 0.024, 0.024]
+          },
+          "first_person": {
+            "position": [1.77, -0.4, -3.2],
+            "scale": [0.03, 0.03, 0.03]
+          }
+        }
+      },
+      "minecraft:icon": {
+        "texture": "void_item"
+      },
+      "minecraft:display_name": {
+        "value": "Void Block\n§o§9Actually Additions"
+      }
+    }
+  }
+}

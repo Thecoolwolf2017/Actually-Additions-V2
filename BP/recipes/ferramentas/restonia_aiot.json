@@ -1,0 +1,59 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipe:restonia_aiot" //BASE BY ANDRIEL
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ABC",
+      "DE ",
+      "   "
+    ],
+    "key": {
+      "A": {
+        "item": "aa:restonia_pickaxe",
+        "data": 0
+      },
+      "B": {
+        "item": "aa:restonia_axe",
+        "data": 0
+      },
+      "C": {
+        "item": "aa:restonia_hoe",
+        "data": 0
+      },
+      "D": {
+        "item": "aa:restonia_sword",
+        "data": 0
+      },
+      "E": {
+        "item": "aa:restonia_shovel",
+        "data": 0
+      },
+      "F": {
+        "item": "aa:void_crystal",
+        "data": 0
+      },
+      "G": {
+        "item": "aa:void_crystal",
+        "data": 0
+      },
+      "H": {
+        "item": "aa:void_crystal",
+        "data": 0
+      },
+      "I": {
+        "item": "minecraft:stone",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "aa:restonia_aiot",
+      "count": 1,
+      "data": 0
+    }
+  }
+}
+//ABDS (ignore isso)

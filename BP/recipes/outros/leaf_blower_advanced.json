@@ -1,0 +1,59 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipe:leaf_blower_advanced" //BASE BY ANDRIEL
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " A ",
+      "DB",
+      "DC "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:flint",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:shears",
+        "data": 0
+      },
+      "C": {
+        "item": "aa:coil_advanced",
+        "data": 0
+      },
+      "D": {
+        "item": "aa:diamatine_crystal",
+        "data": 0
+      },
+      "E": {
+        "item": "aa:void_crystal",
+        "data": 0
+      },
+      "F": {
+        "item": "aa:void_crystal",
+        "data": 0
+      },
+      "G": {
+        "item": "aa:void_crystal",
+        "data": 0
+      },
+      "H": {
+        "item": "aa:void_crystal",
+        "data": 0
+      },
+      "I": {
+        "item": "minecraft:stone",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "aa:leaf_blower_advanced",
+      "count": 1,
+      "data": 0
+    }
+  }
+}
+//ABDS (ignore isso)

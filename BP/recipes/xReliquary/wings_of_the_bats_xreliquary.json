@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipe:wings_of_bats_xenos" //BASE BY ANDRIEL
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ACA",
+      "ABA",
+      "ACA"
+    ],
+    "key": {
+      "A": {
+        "item": "xr:bat_wing",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:netherstar",
+        "data": 0
+      },
+      "C": {
+        "item": "aa:diamatine_block",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "aa:wings_of_bats",
+      "count": 1,
+      "data": 0
+    }
+  }
+}
+//ABDS (ignore isso)

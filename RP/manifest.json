@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "Actually Additions Mcpe",
+		"name": "Actually Additions V2 (Mcpe) (DEV)",
+		"uuid": "0a94be66-b2dd-47b8-9ccb-e0cd8557a40c",
+		"version": [
+			0,
+			0,
+			1
+		],
+		"min_engine_version": [
+			1,
+			14,
+			0
+		]
+	},
+	"modules": [
+		{
+			"description": "Actually Additions Mcpe",
+			"type": "resources",
+			"uuid": "1d2c5918-c584-465b-ba98-71f41203fc0e",
+			"version": [
+				0,
+				0,
+				1
+			]
+		}
+	],
+}

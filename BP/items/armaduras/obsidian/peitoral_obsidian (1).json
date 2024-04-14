@@ -1,0 +1,39 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "aa:peitoral_obsidian",
+			"category": "equipment"
+		},
+		"components": {
+           "minecraft:icon": {
+                "texture": "peitoral_obsidian"
+            },
+            "minecraft:display_name": {
+                "value": "Obsidian Chestplate\n§o§9Actually Additions"
+            },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.chestplate"
+            },
+            
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 15,
+				"slot": "armor_torso"
+			},
+			"minecraft:durability": {
+				"max_durability": 800,
+				"repair_items": {}
+			},
+			"minecraft:damage": 1,
+			"minecraft:armor": {
+				"protection": 4
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.chest"
+			},
+			"minecraft:allow_off_hand": true
+		}
+	}
+}
+// ABDS

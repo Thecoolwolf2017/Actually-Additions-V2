@@ -1,0 +1,46 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "aa:ring_of_resistance_desativar",
+			"category": "command"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "ring_resistance_desativar"
+			},
+			"minecraft:creative_category": {
+				"parent": "items"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "aa:resisoff",
+					"target": "self"
+				}
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:fuel": {
+				"duration": 10
+			},
+			"minecraft:display_name": {
+				"value": "Ring Of Resistance Desativador"
+			}
+		},
+		"events": {
+			"aa:resisoff": {
+				"remove_mob_effect": {
+					"effect": "resistance",
+					"target": "self"
+				},
+				"run_command": {
+					"command": [
+						"give @s aa:ring_of_resistance 1 0"
+					]
+				},
+				"decrement_stack": {
+					"ignore_game_mode": true
+				}
+			}
+		}
+	}
+}

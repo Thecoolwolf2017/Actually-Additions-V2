@@ -1,0 +1,44 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "aa:actually_additions"
+		},
+		"structure_name": "mystructure:actually_additions",
+		"facing_direction": "random",
+		"adjustment_radius": 8,
+		"constraints": {
+			"grounded": {},
+			"block_intersection": {
+				"block_whitelist": [
+					"minecraft:air",
+					"minecraft:tallgrass",
+					"minecraft:plant",
+					"minecraft:double_plant",
+					"minecraft:double_plant 1",
+					"minecraft:double_plant 2",
+					"minecraft:double_plant 3",
+					"minecraft:double_plant 4",
+					"minecraft:double_plant 5",
+					"minecraft:red_flower",
+					"minecraft:red_flower 1",
+					"minecraft:red_flower 2",
+					"minecraft:red_flower 3",
+					"minecraft:red_flower 4",
+					"minecraft:red_flower 4",
+					"minecraft:red_flower 5",
+					"minecraft:red_flower 6",
+					"minecraft:red_flower 7",
+					"minecraft:red_flower 8",
+					"minecraft:red_flower 9",
+					"minecraft:red_flower 10",
+					"minecraft:grass",
+					"minecraft:seagrass",
+					"minecraft:dirt",
+					"minecraft:leaves",
+					"minecraft:leaves2"
+				]
+			}
+		}
+	}
+}

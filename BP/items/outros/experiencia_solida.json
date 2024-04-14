@@ -1,0 +1,42 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "aa:experiencia_solida",
+			"category": "items"
+		},
+		"components": {
+		  			"minecraft:icon": {
+				"texture": "exp"
+			},
+			"minecraft:creative_category": {
+				"parent": "items"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+				"event": "aa:levelup",
+				"target":"self"
+				   }
+			   },
+			"minecraft:max_stack_size": 64,
+			"minecraft:fuel": {
+				"duration": 10
+			},
+			"minecraft:display_name": {
+				"value": "Solidified Experience\n§o§9Actually Additions"
+            }
+		},
+		"events":{			
+			"aa:levelup": {
+				   "run_command":{
+					     "command": [
+						   "xp 020 @s"
+					   ]
+			    },
+			    "decrement_stack": {
+			    "ignore_game_mode": true
+		     }
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipe:palis_crystal2" //BASE BY ANDRIEL
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AAA",
+      "AAA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "aa:shard_blue",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:stone",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:stone",
+        "data": 0
+      },
+      "D": {
+        "item": "minecraft:stone",
+        "data": 0
+      },
+      "E": {
+        "item": "aa:restonia_block",
+        "data": 0
+      },
+      "F": {
+        "item": "minecraft:stone",
+        "data": 0
+      },
+      "G": {
+        "item": "minecraft:stone",
+        "data": 0
+      },
+      "H": {
+        "item": "minecraft:stone",
+        "data": 0
+      },
+      "I": {
+        "item": "minecraft:stone",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "aa:palis_crystal",
+      "count": 1,
+      "data": 0
+    }
+  }
+}
+//ABDS (ignore isso)

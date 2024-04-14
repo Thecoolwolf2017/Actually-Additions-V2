@@ -1,0 +1,59 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "recipe:peitoral_restonia"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A A",
+			"AAA",
+			"AAA"
+		],
+		"key": {
+			"A": {
+				"item": "aa:restonia_crystal",
+				"data": 0
+			},
+			"B": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"C": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"D": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"E": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"F": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"G": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"H": {
+				"item": "aa:void_crystal",
+				"data": 0
+			},
+			"I": {
+				"item": "minecraft:stone",
+				"data": 0
+			}
+		},
+		"result": {
+			"item": "aa:peitoral_restonia",
+			"count": 1,
+			"data": 0
+		}
+	}
+}
