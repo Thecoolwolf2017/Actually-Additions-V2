@@ -70,7 +70,7 @@
         },
         "permutations": [
             {
-                "condition": "query.block_property('aa:posicao') == 3",
+                "condition": "query.block_state('aa:posicao') == 3",
                 "components": {
                     "minecraft:rotation": [
                         0,
@@ -80,7 +80,7 @@
                 }
             },
             {
-                "condition": "query.block_property('aa:posicao') == 4",
+                "condition": "query.block_state('aa:posicao') == 4",
                 "components": {
                     "minecraft:rotation": [
                         0,
@@ -90,7 +90,7 @@
                 }
             },
             {
-                "condition": "query.block_property('aa:posicao') == 5",
+                "condition": "query.block_state('aa:posicao') == 5",
                 "components": {
                     "minecraft:rotation": [
                         0,

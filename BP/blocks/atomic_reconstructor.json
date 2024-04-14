@@ -3,16 +3,11 @@
     "minecraft:block": {
         "description": {
             "identifier": "aa:atomic_reconstructor",
-            "properties": {
-                "aa:posicao": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6
-                ]
-            }
+            "traits": {
+                "minecraft:placement_direction": {
+                 "enabled_states": ["minecraft:cardinal_direction"]
+                }
+               }
         },
         "components": {
             "minecraft:material_instances": {
@@ -33,19 +28,7 @@
             },
             "minecraft:geometry": "geometry.block.atomic",
             "minecraft:display_name": "Atomic Reconstructor",
-            "minecraft:pick_collision": {
-                "origin": [
-                    -8,
-                    0,
-                    -8
-                ],
-                "size": [
-                    16,
-                    16,
-                    16
-                ]
-            },
-            "minecraft:entity_collision": {
+            "minecraft:collision_box": {
                 "origin": [
                     -8,
                     0,
@@ -60,23 +43,22 @@
             "minecraft:on_player_placing": {
                 "event": "aa:rotacao"
             },
-            "minecraft:destroy_time": 1.0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.0
+            },
             "minecraft:friction": 0.6,
-            "minecraft:explosion_resistance": 20.0,
-            "minecraft:block_light_absorption": 15.0,
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 20.0
+            },
+            "minecraft:light_dampening": 15,
             "minecraft:loot": "loot_tables/maquinas/atomic_reconstructor.json",
             "minecraft:map_color": "#ccf8ff",
             "minecraft:on_interact": {
-                "condition": "query.get_equipped_item_name == 'coal_block'",
+                "condition": "query.is_item_name_any == 'coal_block'",
                 "event": "mudar",
                 "target": "self"
             },
-            "minecraft:ticking": {
-                "looping": true,
-                "range": [
-                    10,
-                    11
-                ],
+            "minecraft:random_ticking": {
                 "on_tick": {
                     "event": "aa:atomic",
                     "target": "self"
@@ -104,35 +86,37 @@
         },
         "permutations": [
             {
-                "condition": "query.block_property('aa:posicao') == 3",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        180,
-                        0
-                    ]
-                }
-            },
-            {
-                "condition": "query.block_property('aa:posicao') == 4",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        90,
-                        0
-                    ]
-                }
-            },
-            {
-                "condition": "query.block_property('aa:posicao') == 5",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        270,
-                        0
-                    ]
-                }
+            "condition": "query.block_state ('minecraft:cardinal_direction') == 'north'",
+            "components": {
+             "minecraft:transformation": {
+              "rotation": [0, 0, 0]
+             }
             }
+           },
+           {
+            "condition": "query.block_state ('minecraft:cardinal_direction') == 'south'",
+            "components": {
+             "minecraft:transformation": {
+              "rotation": [0, 180, 0]
+             }
+            }
+           },
+           {
+            "condition": "query.block_state ('minecraft:cardinal_direction') == 'west'",
+            "components": {
+             "minecraft:transformation": {
+              "rotation": [0, 90, 0]
+             }
+            }
+           },
+           {
+            "condition": "query.block_state ('minecraft:cardinal_direction') == 'east'",
+            "components": {
+             "minecraft:transformation": {
+              "rotation": [0, -90, 0]
+             }
+            }
+           }
         ]
     }
 }

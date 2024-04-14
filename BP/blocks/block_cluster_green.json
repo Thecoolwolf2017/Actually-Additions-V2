@@ -3,16 +3,12 @@
     "minecraft:block": {
         "description": {
             "identifier": "aa:block_cluster_green",
-            "properties": {
-                "aa:posicao": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6
-                ]
-            }
+            "traits": {
+                "minecraft:placement_direction": {
+                 "enabled_states": ["minecraft:cardinal_direction",
+                  "minecraft:facing_direction"]
+                }
+               }
         },
         "components": {
             "minecraft:material_instances": {
@@ -23,7 +19,7 @@
             },
             "minecraft:geometry": "geometry.cluster_green",
             "minecraft:display_name": "Green Crystal Cluster",
-            "minecraft:pick_collision": {
+            "minecraft:collision_box": {
                 "origin": [
                     -8,
                     0,
@@ -35,30 +31,20 @@
                     16
                 ]
             },
-            "minecraft:block_light_emission": 0.500,
-            "minecraft:entity_collision": {
-                "origin": [
-                    -8,
-                    0,
-                    -8
-                ],
-                "size": [
-                    16,
-                    16,
-                    16
-                ]
-            },
+            "minecraft:light_emission": 1,
             "minecraft:on_player_placing": {
                 "event": "aa:rotacao"
             },
-            "minecraft:destroy_time": 2.0,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2
+            },
             "minecraft:friction": 0.6,
-            "minecraft:block_light_absorption": 1.0,
+            "minecraft:light_dampening": 1,
             "minecraft:loot": "loot_tables/maquinas/cluster_green.json",
             "minecraft:map_color": "#717171",
             "minecraft:flammable": {
-                "flame_odds": 0,
-                "burn_odds": 0
+                "catch_chance_modifier": 0,
+                "destroy_chance_modifier": 0
             }
         },
         "events": {
@@ -69,36 +55,38 @@
             }
         },
         "permutations": [
-            {
-                "condition": "query.block_property('aa:posicao') == 3",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        180,
-                        0
-                    ]
-                }
-            },
-            {
-                "condition": "query.block_property('aa:posicao') == 4",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        90,
-                        0
-                    ]
-                }
-            },
-            {
-                "condition": "query.block_property('aa:posicao') == 5",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        270,
-                        0
-                    ]
-                }
-            }
+            { 
+    "condition": "query.block_state ('minecraft:cardinal_direction') == 'north'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 0, 0]
+     }
+    }
+   },
+   {
+    "condition": "query.block_state ('minecraft:cardinal_direction') == 'south'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 180, 0]
+     }
+    }
+   },
+   { 
+    "condition": "query.block_state ('minecraft:cardinal_direction') == 'west'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, 90, 0]
+     }
+    }
+   },
+   {
+    "condition": "query.block_state ('minecraft:cardinal_direction') == 'east'",
+    "components": {
+     "minecraft:transformation": {
+      "rotation": [0, -90, 0]
+     }
+    }
+   }
         ]
     }
 }
